@@ -10,7 +10,8 @@ body{
     color: #ffd256;
     font-family: "roboto";
     background-color: #181818;
-    
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 h1{ 
@@ -32,6 +33,7 @@ a:link, a:visited{
     font-size: 1vw;
 
     margin-top: 3vh;
+    
 
     padding: 2.5vh;
 }
