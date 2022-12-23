@@ -1,0 +1,24 @@
+.projectThumbnail{
+    width: 16vh;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.item{
+    display: flex;
+    margin-top: 4vh;
+}
+
+.itemText{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #ffd256;
+}
+
+body{
+    margin: 20vw;
+}
