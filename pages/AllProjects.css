@@ -1,9 +1,10 @@
-.projectThumbnail{
-    width: 16vh;
+
+
+h1{
+    font-size: 2rem;
 }
 
 h2{
-    text-align: center;
     margin-bottom: 10vh;
 }
 
@@ -13,12 +14,57 @@ h2{
 }
 
 .itemText{
-    display: flex;
-    flex-direction: column;
     padding: 10px;
-    color: #ffd256;
 }
 
-body{
-    margin: 20vw;
+.galleryLinkContainer{
+    text-decoration: none;
+
+    transition: background-color 0.5s;
+    color: var(--secondary);
+}
+
+.galleryLinkContainer:hover{
+    background-color: var(--highlight);
+    color: var(--base);
+}
+
+.galleryLinkContainer:hover, .galleryLinkContainer:hover a{
+    color: var(--base);
+}
+
+.galleryImage{
+    min-width: 100%;
+    margin-bottom: 20px;
+
+    overflow: clip;
+
+    visibility: hidden;
+    max-height: 0px;
+
+
+    transition: max-height 1s;
+    -moz-transition: max-height 1s;
+}
+
+.galleryImage img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.galleryLinkContainer:hover .galleryImage{
+    visibility: visible;
+    max-height: 20vh;
+}
+
+.galleryImage:hover{
+    visibility: visible;
+    max-height: 20vh;
+}
+
+/* overwriting <a> effects */
+a.galleryLink{  
+    text-decoration: none;
 }

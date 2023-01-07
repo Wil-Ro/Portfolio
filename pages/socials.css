@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#container a{
+    padding: 7vh 0 7vh 0;
+    text-align: center;
+    width: 100vw;
+
+    font-size: 3rem;
+}
+
+#title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+@media (orientation:portrait){
+#container a{
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+#container a:nth-child(odd){
+    background-color: var(--highlight);
+    color: var(--base);
+}
+
+/*hover colour*/
+#container a:hover{
+    background-color: var(--base);
+    color: var(--highlight);
+}
+
+}

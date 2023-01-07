@@ -7,23 +7,26 @@
 }
 
 body{
-    color: #ffd256;
+    color: var(--secondary);
     font-family: "roboto";
-    background-color: #181818;
+    background-color: var(--base);
     margin-left: 10vw;
     margin-right: 10vw;
+
+    /* fixes padding inherited from basic.css*/
+    padding: 0;
 }
 
 h1{ 
     font-size: clamp(20px, 4vw, 170px);
-    height: 20vh;
-    text-align: center;
+    height: 10vh;
+    text-align: left;
+    margin-top: 30px;
 
 }
 
-
 a:link, a:visited{
-    color: #ffd256;
+    color: var(--secondary);
     text-decoration: none;
 }
 
@@ -45,14 +48,13 @@ a:link, a:visited{
 
 iframe{
     border: 2px solid transparent;
-    border-radius: 5px;
 
     padding: 5px;
     transition: border 0.5s;
 }
 
 iframe:hover{
-    border: 2px solid #ffd256;
+    border: 2px solid var(--highlight);
 }
 
 .backButton{
@@ -117,7 +119,7 @@ iframe:hover{
     }
     
     iframe{
-        border: 2px solid #ffd256;
+        border: 2px solid var(--secondary);
         
         width: 90vw;
         height: 50vw;

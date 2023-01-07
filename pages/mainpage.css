@@ -1,238 +1,65 @@
 #Title{ 
-    font-size: clamp(1.2rem, 4vw, 4rem);
-
-    padding-left: 6; 
-
-    margin-top: 10vh; 
-    margin-bottom: 70vh;
-    margin-left: 2vw;
-    margin-right: 60vw;
-
-    height: 20vh;
+    font-size: 2rem;
     text-align: left;
+    margin-bottom: 2rem;
 
+    max-width: 15vw;
+
+    border-bottom: 2px solid var(--secondary);
+
+    transition: background-color 0.5s;
+
+}
+
+#Title:hover{
+    background-color: var(--highlight);
+    color: var(--base);
+
+    border-bottom: 2px solid var(--highlight);
+}
+
+.subTitle{
+    font-size: 60%;
+    padding-top: 10;
+    margin-bottom: 10;
 }
 
 .textBox{
-    text-align: center;
+    text-align: left;
     font-size: clamp(1rem, 1.2vw, 3rem);
-    padding: 1.3vh;
-    margin-top: 8vh;
-    margin-bottom: 8vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
 }
 
-.profileImageContainer{
-    width: 30vw; 
-    height: 30vw; 
-    text-align: center;
-    margin: 0 auto;
+
+#mainContent{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 1rem;
+}
+
+#sideText{
+    margin-left: 2rem;
+}
+
+#profileImageContainer{
+    min-width: 20vw; 
+    height: 20vw; 
+
+    margin-left: 0.5rem;
+}
+
+#galleryButton{
+    margin-top: 5vh;
 }
 
 .profileImage{
-    border-radius: 2px; 
     object-fit: cover; 
     width: 100%; 
     height:100%
 }
 
-#galleryHeader{
-    margin-left: 30vw; 
-    margin-right: 30vw;
-
-    border-radius: 5px;
-
-    font-size: clamp(1rem, 1.2vw, 3rem);
-} 
-
-.gallery{
-    display: flex;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    height: 19vh;
-    margin-bottom: 5vh;
-    transition: margin-bottom 2s 2s ease-in;
-    justify-content: space-evenly;
-}
-
-.galleryContainer:hover .gallery{
-    margin-bottom: 28vh;  
-    transition: 0.5s;
-}
-
-.galleryItem{
-    height: 100%;
-}
-
-
-.galleryItem:hover + .galleryPopup{
-    visibility: visible;
-    opacity: 1;
-}
-
-.galleryItem:hover .popupTongue{
-    visibility: visible;
-    opacity: 1;
-}
-
-.galleryPopup:hover{
-    visibility: visible;
-    opacity: 1;
-}
-
-.galleryPopup:hover .popupTongue{
-    visibility: visible;
-    opacity: 1;
-}
-
-.galleryPopup{
-    visibility: hidden;
-    opacity: 0;
-
-    display: flex;
-    z-index: 5;
-    position: absolute;
-    background-color: #ffd256;
-    border-radius: 2px;
-    color: #181818;
-    width: 78.5vw;
-    height: 19vh;
-    transition: visibility 0.3s, opacity 0.5s;
-    margin-top: 20.85vh;
-}
-
-.popupTongue{
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.3s, opacity 0.5s;
-
-    width: 1.85vh;
-    height: 1.85vh;
-    margin-left: 5vw;
-}
-
-.popupImage{
-    /*display: none;*/
-    padding: 10px;
-}
-
-.popupTextContainer{
-    display: flex; 
-    flex-direction: column; 
-    padding: 6px;
-    color: #181818;
-}
-
-.galleryImage{
-    width: 100%;
-    height: 100%;
-}
-
-.galleryImageContainer{
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-.galleryTitle{ 
-    font-weight: 700;
-}
-
-#galleryOutroLink{
-    text-align: center;
-    margin-top: 5vh;
-}
-
-#outroText{
-    margin-top: 12vh;
-    margin-bottom: 20vh;
-    margin-left: 27vw;
-    margin-right: 27vw;
-}
-
 @media (orientation:portrait){
-    #Title{ 
-        font-size: 10vw;
-        margin-right: 50vw;
-    }
-    
-    .textBox{
-        font-size: 0.7rem;
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-
-    .profileImageContainer{
-        margin: 2vh;
-        width: auto;
-        height: auto;
-    }
-    
-    .profileImage{
-        border-radius: 1vw; 
-    }
-
-    #galleryHeader{
-        margin-left: 2vw; 
-        margin-right: 2vw;
-        font-size: 0.7rem;
-    } 
-    
-    .gallery{
-        margin-left: 2vw;
-        margin-right: 2vw;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        height: 100vw;
-    }
-    
-    .galleryItem{
-        width: 20vw;
-        height: 20vw;
-        margin-bottom: 3vw;;
-    }
-    
-    .galleryPopup{
-        visibility: visible;
-        opacity: 1;
-        z-index: 0;
-        position: static;
-        background-color: transparent;
-        color: #ffd256;
-        width: 73.5vw;
-        height: 20vw;
-        margin-top: 0vh;
-    }
-
-    .popupTongue{
-        display: none;
-    }
-    
-    .popupImage{
-        display: none;
-    }
-    
-    .galleryImage{
-        border-radius: 2px;
-    }
-
-    
-    #galleryOutroLink{
-        font-size: 0.7rem;
-    }
-    
-    #outroText{
-        margin-top: 12vh;
-        margin-bottom: 20vh;
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-
-    .galleryLink{ /*this is set in basics, but the gallery on mobile will want to be different*/
-        text-decoration: none;
-        color:#ffd256;
-    }
+   
 }
 
 

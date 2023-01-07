@@ -1,48 +1,48 @@
-a:not(.galleryLink){
-    transition: background-color 0.5s
+a{  
+    transition: background-color 0.5s;
+    color: var(--secondary);
 }
 
 a:hover:not(.galleryLink){
-    background-color: #ffd256;
-    color: #181818;
-    border-radius: 2px;
+    background-color: var(--highlight);
+    color: var(--base);
     text-decoration: none;
 }
 
 span{
-    background-color: #ffd256;
-    color: #181818;
+    background-color: var(--secondary);
+    color: var(--base);
     border-radius: 2px;
 }
 
 span:hover{
-    background-color: #181818;
-    color: #ffd256;
+    background-color: var(--base);
+    color: var(--secondary);
     border-radius: 2px;
-    outline: solid 1px #ffd256;
+    outline: solid 1px var(--secondary);
 }
 
 ::selection {
-    background-color: #ffd256;
-    color: #181818;
+    background-color: var(--highlight);
+    color: var(--base);
 }
 
 ::-moz-selection {
-    background-color: #ffd256;
-    color: #181818;
+    background-color: var(--highlight);
+    color: var(--base);
 }
 
 ::-o-selection {
-    background-color: #ffd256;
-    color: #181818;
+    background-color: var(--highlight);
+    color: var(--base);
 }
 
 ::-ms-selection {
-    background-color: #ffd256;
-    color: #181818;
+    background-color: var(--highlight);
+    color: var(--base);
 }
 
 ::-webkit-selection {
-    background-color: #ffd256;
-    color: #181818;
+    background-color: var(--highlight);
+    color: var(--base);
 }
