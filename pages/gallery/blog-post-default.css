@@ -89,7 +89,7 @@ iframe:hover{
         margin-left: 0vw;
         margin-right: 0vw;
         margin-top: 5vh; 
-        margin-bottom: 20vh;
+        margin-bottom: 5vh;
 
         padding-top: 0.5vh;
 
@@ -121,7 +121,7 @@ iframe:hover{
     iframe{
         border: 2px solid var(--secondary);
         
-        width: 90vw;
+        width: 70vw;
         height: 50vw;
     }
 

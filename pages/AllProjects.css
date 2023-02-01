@@ -1,11 +1,16 @@
+#Title{
+    max-width: 15vw;
+    margin-bottom: 10vh;
+    transition: background-color 0.5s
+}
 
+#Title:hover{
+    background-color: var(--highlight);
+    color: var(--base);
+}
 
 h1{
     font-size: 2rem;
-}
-
-h2{
-    margin-bottom: 10vh;
 }
 
 .item{
@@ -67,4 +72,29 @@ h2{
 /* overwriting <a> effects */
 a.galleryLink{  
     text-decoration: none;
+}
+
+@media (orientation:portrait){
+    body{
+        padding: 5vw;
+    }
+
+    .galleryLink{
+        font-size: 2rem;
+    }
+
+    .galleryImage{
+        visibility: visible;
+        max-height: 10vh;
+        margin-top:5px;
+    }
+
+    #Title{
+        max-width: 80vw;
+        font-size: 3rem;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
 }

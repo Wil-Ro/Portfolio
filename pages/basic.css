@@ -48,3 +48,14 @@ h1{
     margin-bottom: 7vh; 
     margin-top: 7vh;
 }
+
+@media (orientation:portrait){
+    #socialBar{
+        font-size: 3rem;
+        margin-top: 5vh;
+    }
+
+    #backButtonContainer{
+        font-size: 3rem;
+    }
+}

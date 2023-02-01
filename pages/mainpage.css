@@ -59,7 +59,43 @@
 }
 
 @media (orientation:portrait){
-   
+    body{
+        padding: 5vw;
+    }
+
+   #Title{
+        font-size: 5rem;
+        text-align: left;
+        margin-bottom: 2rem;
+        max-width: 80vw;
+
+        border-bottom: 2px solid var(--secondary);
+
+        transition: background-color 0.5s;
+   }
+
+   .textBox{
+        text-align: left;
+        font-size: 3rem;
+   }
+
+   #mainContent{
+    flex-direction: column;
+   }
+
+   #sideText{
+    margin-left: 0;
+   }
+
+   #galleryButton{
+        text-align: center;
+    }
+
+    #profileImageContainer{
+        height: auto;
+        padding: 10px;
+        margin-bottom: 5vh; 
+    }
 }
 
 
